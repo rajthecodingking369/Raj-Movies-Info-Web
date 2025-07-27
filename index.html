@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Movies</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+  <div class="container">
+    
+    <h1 id="logo" style="cursor: pointer;">🎬 Raj Movies 🤟🏻</h1>
+    
+    <hr>
+    <div class="search-options">
+     <label><input type="radio" name="mediaType" value="movie" checked> Movie</label>
+     <label><input type="radio" name="mediaType" value="tv"> TV Series</label>
+     <button class="viewfav" onclick="showFavourites()"> View Favourites</button>
+    </div>
+    <input class="movienameinput" type="text" id="searchInput" placeholder="Search for a movie...">
+    <button id="searchBTN" class="searchbutton" onclick="searchMovie()">Search</button>
+    <div id="movieContainer"></div>
+  </div>
+  <!-- Modal for Trailer -->
+<div id="trailerModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+ <script src="syntax.js"></script>
+ </body>
+</html>
